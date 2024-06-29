@@ -54,3 +54,15 @@ ul{
     margin-right: auto;
     margin-left: 40px;
 }
+
+.menu li a{
+    margin: 0px 20px;
+    color: #303030;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+.menu li a:hover{
+    color: #014dd5;
+}
+
