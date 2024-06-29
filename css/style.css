@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: poppins;
 }
 
 a{
@@ -17,4 +18,39 @@ ul{
     background-color: #f5f7fb;
     display: flex;
     flex-direction: column;
+    min-height: 600px;
+}
+
+/*----------nav-------------------*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+.logo{
+    color: #122853;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.logo span{
+    background-color: #014dd5;
+    color: #ffffff;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 40px;
 }
