@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/*-------------hero section----------*/
+#hero{
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: column;
+}
