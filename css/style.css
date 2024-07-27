@@ -601,7 +601,9 @@ ul{
     font-size: 0.7rem;
  }
  .h-right-contact-box-text strong{
-    
+    font-size: 1rem;
+    color: #100f0f;
+    font-weight: 600;
  }
 
 
