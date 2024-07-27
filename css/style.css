@@ -414,7 +414,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    max-width: 350px;
+    max-width: 100%;
     border: 5px solid #ffffff;
     padding: 30px;
     background-color: #daa442;
