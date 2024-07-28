@@ -390,9 +390,99 @@
                     <!-----------heading=-------->
                     <div class="team-heading">
                         <h3>Meet Our Specialist</h3>
-                        <p></p>
+                        <p>Find compassionate care. Our skilled therapists are here to help. Explore our team of dedicated mental health professionals.</p>
                     </div>
                     
+                    <!----------**container*****--------->
+                    <div class="team-box-container">
+
+                        <!-- Swiper -->
+                        <div class="swiper mySwiperteam">
+                        <div class="swiper-wrapper">
+
+                                <!-----******slide1-*******-------->
+                                <div class="swiper-slide">
+                                    <!---------=====box=====------->
+                        <div class="team-box">
+                            <!---img-------->
+                            <div class="team-img">
+                                <img src="images/t1.png" alt="">
+                            </div>
+                            <!-----text-->
+                            <div class="team-text">
+                                <strong>Dr. Stephene Asewe</strong>
+                                <span>Psychologist</span>
+                            </div>
+                        </div>
+                                </div><!------slide-end----->
+                                <!-----******slide2-*******-------->
+                                <div class="swiper-slide">
+                                    <!---------=====box=====------->
+                        <div class="team-box">
+                            <!---img-------->
+                            <div class="team-img">
+                                <img src="images/t1.png" alt="">
+                            </div>
+                            <!-----text-->
+                            <div class="team-text">
+                                <strong>Dr. Stephene Asewe</strong>
+                                <span>Psychologist</span>
+                            </div>
+                        </div>
+                                </div><!------slide-end----->
+                                <!-----******slide3-*******-------->
+                                <div class="swiper-slide">
+                                    <!---------=====box=====------->
+                        <div class="team-box">
+                            <!---img-------->
+                            <div class="team-img">
+                                <img src="images/t1.png" alt="">
+                            </div>
+                            <!-----text-->
+                            <div class="team-text">
+                                <strong>Dr. Stephene Asewe</strong>
+                                <span>Psychologist</span>
+                            </div>
+                        </div>
+                                </div><!------slide-end----->
+                                <!-----******slide4-*******-------->
+                                <div class="swiper-slide">
+                                    <!---------=====box=====------->
+                        <div class="team-box">
+                            <!---img-------->
+                            <div class="team-img">
+                                <img src="images/t1.png" alt="">
+                            </div>
+                            <!-----text-->
+                            <div class="team-text">
+                                <strong>Dr. Stephene Asewe</strong>
+                                <span>Psychologist</span>
+                            </div>
+                        </div>
+                                </div><!------slide-end----->
+                                <!-----******slide5-*******-------->
+                                <div class="swiper-slide">
+                                    <!---------=====box=====------->
+                        <div class="team-box">
+                            <!---img-------->
+                            <div class="team-img">
+                                <img src="images/t1.png" alt="">
+                            </div>
+                            <!-----text-->
+                            <div class="team-text">
+                                <strong>Dr. Stephene Asewe</strong>
+                                <span>Psychologist</span>
+                            </div>
+                        </div>
+                                </div><!------slide-end----->
+                                
+                                
+                        </div><!--------wrapper-end------->
+                        <div class="swiper-pagination"></div>
+                        </div><!---------swiper-end-------->
+
+                        
+                    </div><!--------==container-end==------>
                 </section>
 
 
@@ -428,7 +518,31 @@
         },
     },
     });
-    </script>   
+
+    /*=========team==========*/
+    var swiper = new Swiper(".mySwiperteam", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+</script>   
         
             </body>
 </html
