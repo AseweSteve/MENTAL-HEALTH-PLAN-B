@@ -716,3 +716,45 @@ ul{
    object-fit: contain;
    object-position: center;
  }
+ .testimonials-box-container{
+   margin-top: 50px;
+   overflow: hidden;
+ }
+ .testimonials-box{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+ .t-profile{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+ }
+ .t-profile-img{
+   width: 70px;
+   height: 70px;
+   border-radius: 6px;
+   background-color: #c7d0eb;
+   margin-right: 10px;
+   overflow: hidden;
+ }
+ .t-profile-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+ }
+ .t-profile-text{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .t-profile-text strong{
+   color: #122853;
+   font-size: 1.2rem;
+ }
+ .t-profile-text span{
+   color: #535353;
+   font-size: 0.9rem;
+   letter-spacing: 0.3px;
+ }
