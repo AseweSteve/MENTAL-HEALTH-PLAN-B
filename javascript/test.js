@@ -67,20 +67,21 @@ $("#result-button").click(function() {
         result = "Chill, you are perfectly fine. 😄";
     }
 
-    // Show the result in the modal
     $("#modal-result-text").text(result);
-    $("#result-modal").show();
-});
-
-// Add event listener for the close button in the modal
-$(".close-btn").click(function() {
-    $("#result-modal").hide();
+    $("#result-modal").removeClass('hide');
+    $("#result-modal").show(); // Show the result
 });
 
 // Add event listeners for the answer buttons
 $(".btn").click(function() {
     $(".btn").removeClass('active'); // Remove active class from other buttons
     $(this).addClass('active'); // Add active class to the clicked button
+});
+
+// Event listener for closing the modal
+$(".close-btn").click(function() {
+    $("#result-modal").addClass('hide');
+    $("#result-modal").hide();
 });
 
 startGame();

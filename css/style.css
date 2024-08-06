@@ -222,90 +222,97 @@ ul{
 /*============ Depression Test Page Styling ==============*/
 
 /* Styling for the border around the test container */
+/* General container styling */
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Full viewport height */
+   padding: 20px; /* Optional padding */
+   box-sizing: border-box;
+}
+
+/* Border box styling */
 .border {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: flex-start;
+   align-items: center;
    max-width: 100%;
    border: 5px solid #ffffff;
    padding: 30px;
    background-color: #daa442;
-   position: relative; /* Ensure positioning context for child elements */
-   transition: border 0.3s ease-in-out;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+   border-radius: 10px; /* Optional rounded corners */
+   box-sizing: border-box;
+   text-align: center;
 }
 
 .border:hover {
    border: 5px solid #c7d0eb;
 }
 
-/* Heading styling */
 .heading h1 {
    font-size: 50px;
    color: #ff7171;
-   margin-top: 0;
+   margin: 0;
 }
 
-/* Button grid styling */
 .btn-grid button.btn {
    margin: 4% 1%;
    padding: 2% 4%;
    color: #f2f3f2;
    cursor: pointer;
-   border-radius: 50px;
+   border-radius: 100px;
    text-transform: uppercase;
    border: 1px solid #daa442;
    background-color: #2a4359;
-   transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
    outline: none;
 }
 
 .btn-grid button.btn:hover {
    background-color: #daa442;
-   border: 1px solid #2a4359;
+   transition: all 0.3s ease-in-out;
 }
 
-/* Styling for the start, next, and result buttons */
 .start-btn, .result-btn, .next-btn {
+   position: relative;
    cursor: pointer;
    font-size: 20px; /* Adjusted for better fit */
    text-transform: uppercase;
-   border-radius: 50px;
-   padding: 10px 20px; /* Adjusted for better fit */
-   border: none;
+   border-radius: 100px;
+   padding: 10px;
+   border: 0;
    background-color: #2a4359;
-   color: #ffffff;
-   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+   color: white;
+   transition: all 0.3s ease-in-out;
 }
 
 .start-btn:hover, .next-btn:hover {
    background-color: #daa442;
    color: #f2f3f2;
    border: 2px solid #2a4359;
+   transition: all 0.3s ease-in-out;
 }
 
-/* Centering text and controls */
 #question-container, .controls {
    text-align: center;
 }
 
-/* Styling for the question text */
 #question {
    margin-top: 3%;
    font-size: 30px;
    color: #f2f3f2;
 }
 
-/* Styling for the result container */
-.result-container {
-   position: absolute;
-   bottom: 10px; /* Adjust to place at the bottom of the border box */
-   width: calc(100% - 60px); /* Adjusted to fit within border box with padding */
-   font-size: 30px; /* Adjusted for better fit */
+#result {
+   font-size: 30px;
    color: #2a4359;
-   display: none; /* Hidden by default */
+   display: none; /* Initially hidden */
 }
-/* Modal Styling */
+
+/* Modal styling */
 .modal {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
@@ -315,7 +322,7 @@ ul{
    width: 100%; /* Full width */
    height: 100%; /* Full height */
    overflow: auto; /* Enable scroll if needed */
-   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 .modal-content {
@@ -342,23 +349,6 @@ ul{
    cursor: pointer;
 }
 
-/* Result container */
-.result-container {
-   position: absolute;
-   bottom: 10px;
-   width: calc(100% - 60px);
-   font-size: 30px;
-   color: #2a4359;
-   display: none;
-}
-
-/* Styling for the question count display */
-.question-count {
-   position: absolute;
-   right: 10px;
-   top: 10px;
-   color: #f2f3f2;
-}
 
 /*==============what-we-provide===============*/
 
@@ -1266,5 +1256,56 @@ ul{
    }
    .story-number-container{
       grid-template-columns: 1fr;
+   }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+   .heading h1 {
+       font-size: 40px;
+   }
+
+   .btn-grid button.btn {
+       padding: 2% 3%;
+   }
+
+   .start-btn, .result-btn, .next-btn {
+       font-size: 16px;
+       padding: 8px;
+   }
+
+   #question {
+       font-size: 25px;
+   }
+
+   #result {
+       font-size: 25px;
+   }
+
+   .modal-content {
+       width: 90%;
+   }
+}
+
+@media (max-width: 480px) {
+   .heading h1 {
+       font-size: 30px;
+   }
+
+   .btn-grid button.btn {
+       padding: 2% 2%;
+   }
+
+   .start-btn, .result-btn, .next-btn {
+       font-size: 14px;
+       padding: 6px;
+   }
+
+   #question {
+       font-size: 20px;
+   }
+
+   #result {
+       font-size: 20px;
    }
 }
