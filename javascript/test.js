@@ -67,8 +67,14 @@ $("#result-button").click(function() {
         result = "Chill, you are perfectly fine. 😄";
     }
 
-    $("#result").text(result);
-    $("#result").show(); // Show the result
+    // Show the result in the modal
+    $("#modal-result-text").text(result);
+    $("#result-modal").show();
+});
+
+// Add event listener for the close button in the modal
+$(".close-btn").click(function() {
+    $("#result-modal").hide();
 });
 
 // Add event listeners for the answer buttons
